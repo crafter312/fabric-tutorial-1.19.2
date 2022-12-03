@@ -24,19 +24,19 @@ public class ModBackroomsBiomes {
         return MathHelper.hsvToRgb(0.62222224F - $$1 * 0.05F, 0.5F + $$1 * 0.1F, 1.0F);
     }
 
-    private static Biome biome(Biome.Precipitation precipitation, Biome.Category category, float temperature,
+    private static Biome biome(Biome.Precipitation precipitation, float temperature,
                                float downfall, SpawnSettings.Builder spawnBuilder, GenerationSettings.Builder biomeBuilder,
                                @Nullable MusicSound music)
     {
-        return biome(precipitation, category, temperature, downfall, 4159204, 329011,
+        return biome(precipitation, temperature, downfall, 4159204, 329011,
                 spawnBuilder, biomeBuilder, music);
     }
 
-    private static Biome biome(Biome.Precipitation precipitation, Biome.Category category, float temperature, float downfall,
+    private static Biome biome(Biome.Precipitation precipitation, float temperature, float downfall,
                                int waterColor, int waterFogColor, SpawnSettings.Builder spawnBuilder,
                                GenerationSettings.Builder biomeBuilder, @Nullable MusicSound music)
     {
-        return (new Biome.Builder()).precipitation(precipitation).category(category).temperature(temperature)
+        return (new Biome.Builder()).precipitation(precipitation).temperature(temperature)
                 .downfall(downfall).effects((new BiomeEffects.Builder()).waterColor(waterColor)
                         .waterFogColor(waterFogColor).fogColor(12638463).skyColor(calculateSkyColor(temperature))
                         .moodSound(BiomeMoodSound.CAVE).music(music).build())
@@ -59,7 +59,7 @@ public class ModBackroomsBiomes {
         biomeBuilder.feature(GenerationStep.Feature.UNDERGROUND_ORES, ModPlacedFeatures.TEST_WALL_PLACED);
         biomeBuilder.feature(GenerationStep.Feature.UNDERGROUND_ORES, ModPlacedFeatures.TEST_BLOCK_PLACED);
 
-        return biome(Biome.Precipitation.NONE, Biome.Category.NONE, 0.8f, 0f, 4159204,
+        return biome(Biome.Precipitation.NONE, 0.8f, 0f, 4159204,
                 0x919191, spawnBuilder, biomeBuilder, NORMAL_MUSIC);
     }
 

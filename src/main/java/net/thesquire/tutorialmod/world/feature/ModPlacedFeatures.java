@@ -49,7 +49,7 @@ public class ModPlacedFeatures {
             CountPlacementModifier.of(12),
             SquarePlacementModifier.of(),
             HeightRangePlacementModifier.uniform(YOffset.fixed(73), YOffset.fixed(75)),
-            BlockFilterPlacementModifier.of(BlockPredicate.matchingBlocks(List.of(Blocks.AIR), Direction.DOWN.getVector())),
+            BlockFilterPlacementModifier.of(BlockPredicate.matchingBlocks(Direction.DOWN.getVector(), List.of(Blocks.AIR))),
             BiomePlacementModifier.of());
 
     public static final RegistryEntry<PlacedFeature> TEST_WALL_PLACED = PlacedFeatures.register("test_wall_placed",
@@ -58,8 +58,8 @@ public class ModPlacedFeatures {
             SquarePlacementModifier.of(),
             HeightRangePlacementModifier.uniform(YOffset.fixed(68), YOffset.fixed(72)),
             BlockFilterPlacementModifier.of(BlockPredicate.bothOf(
-                    BlockPredicate.matchingBlocks(List.of(Blocks.STONE), Direction.DOWN.getVector()),
-                    BlockPredicate.not(BlockPredicate.matchingBlocks(List.of(Blocks.STONE), BlockPos.ORIGIN)))),
+                    BlockPredicate.matchingBlocks(Direction.DOWN.getVector(), List.of(Blocks.STONE)),
+                    BlockPredicate.not(BlockPredicate.matchingBlocks(BlockPos.ORIGIN, List.of(Blocks.STONE))))),
             BiomePlacementModifier.of());
 
     /***********************************************************************************************************/

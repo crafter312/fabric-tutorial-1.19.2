@@ -24,19 +24,19 @@ public class ModOverworldBiomes {
         return MathHelper.hsvToRgb(0.62222224F - $$1 * 0.05F, 0.5F + $$1 * 0.1F, 1.0F);
     }
 
-    private static Biome biome(Biome.Precipitation precipitation, Biome.Category category, float temperature, 
+    private static Biome biome(Biome.Precipitation precipitation, float temperature,
                                float downfall, SpawnSettings.Builder spawnBuilder, GenerationSettings.Builder biomeBuilder, 
                                @Nullable MusicSound music)
     {
-        return biome(precipitation, category, temperature, downfall, 4159204, 329011, 
+        return biome(precipitation, temperature, downfall, 4159204, 329011,
                 spawnBuilder, biomeBuilder, music);
     }
 
-    private static Biome biome(Biome.Precipitation precipitation, Biome.Category category, float temperature, float downfall,
+    private static Biome biome(Biome.Precipitation precipitation, float temperature, float downfall,
                                int waterColor, int waterFogColor, SpawnSettings.Builder spawnBuilder, 
                                GenerationSettings.Builder biomeBuilder, @Nullable MusicSound music)
     {
-        return (new Biome.Builder()).precipitation(precipitation).category(category).temperature(temperature)
+        return (new Biome.Builder()).precipitation(precipitation).temperature(temperature)
                 .downfall(downfall).effects((new BiomeEffects.Builder()).waterColor(waterColor)
                         .waterFogColor(waterFogColor).fogColor(12638463).skyColor(calculateSkyColor(temperature))
                         .moodSound(BiomeMoodSound.CAVE).music(music).build())
@@ -76,7 +76,7 @@ public class ModOverworldBiomes {
         DefaultBiomeFeatures.addDefaultMushrooms(biomeBuilder); // 9 (281)
         DefaultBiomeFeatures.addDesertVegetation(biomeBuilder); // 9 (309)
         DefaultBiomeFeatures.addFrozenTopLayer(biomeBuilder);   // 10
-        return biome(Biome.Precipitation.NONE, Biome.Category.DESERT, 2.0F, 0.0F, spawnBuilder,
+        return biome(Biome.Precipitation.NONE, 2.0F, 0.0F, spawnBuilder,
                 biomeBuilder, NORMAL_MUSIC);
     }
 
@@ -93,7 +93,7 @@ public class ModOverworldBiomes {
         DefaultBiomeFeatures.addSprings(biomeBuilder);          // 8
         DefaultBiomeFeatures.addFrozenLavaSpring(biomeBuilder); // 8
         DefaultBiomeFeatures.addFrozenTopLayer(biomeBuilder);   // 10
-        return biome(Biome.Precipitation.SNOW, Biome.Category.MOUNTAIN, -0.7F, 0.9F, spawnBuilder,
+        return biome(Biome.Precipitation.SNOW, -0.7F, 0.9F, spawnBuilder,
                 biomeBuilder, NORMAL_MUSIC);
     }
 

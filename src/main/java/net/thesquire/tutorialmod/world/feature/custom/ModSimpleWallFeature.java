@@ -4,12 +4,11 @@ import com.mojang.serialization.Codec;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.random.Random;
 import net.minecraft.world.StructureWorldAccess;
 import net.minecraft.world.gen.feature.Feature;
 import net.minecraft.world.gen.feature.OreFeatureConfig;
 import net.minecraft.world.gen.feature.util.FeatureContext;
-
-import java.util.Random;
 
 public class ModSimpleWallFeature extends Feature<ModSimpleWallFeatureConfig> {
 
@@ -27,9 +26,9 @@ public class ModSimpleWallFeature extends Feature<ModSimpleWallFeatureConfig> {
         BlockPos pos = context.getOrigin();
         ModSimpleWallFeatureConfig config = context.getConfig();
         StructureWorldAccess world = context.getWorld();
-        int width = config.width().get(new Random());
-        int depth = config.depth().get(new Random());
-        int height = config.height().get(new Random());
+        int width = config.width().get(Random.create());
+        int depth = config.depth().get(Random.create());
+        int height = config.height().get(Random.create());
         BlockPos startPos = new BlockPos(
                 pos.getX() - (width / 2),
                 pos.getY(),
