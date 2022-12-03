@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "GDG",
+    "DGD",
+    "GDG"
+  ],
+  "key": {
+    "G": {
+      "item": "minecraft:glass"
+    },
+    "D": {
+      "item": "tutorialmod:mythril_dust"
+    }
+  },
+  "result": {
+    "item": "tutorialmod:mythril_lamp"
+  }
+}

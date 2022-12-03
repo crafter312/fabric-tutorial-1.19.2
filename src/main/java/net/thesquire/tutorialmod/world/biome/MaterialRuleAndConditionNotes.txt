@@ -1,0 +1,58 @@
+Conditions:
+
+STONE_DEPTH_FLOOR - this refers to the first layer on the top of the stone base
+STONE_DEPTH_FLOOR_WITH_SURFACE_DEPTH - this refers to the first few layers on the top of the stone base
+    - this results in the standard thickness of surface in, say, a plains biome where you have to
+    go down a few blocks before you reach stone
+STONE_DEPTH_FLOOR_WITH_SURFACE_DEPTH_RANGE_6
+STONE_DEPTH_FLOOR_WITH_SURFACE_DEPTH_RANGE_30
+    - these two are similar to STONE_DEPTH_FLOOR_WITH_SURFACE_DEPTH, just with extra surface thickness I think
+    - for example, when you have sandstone for a little ways underneath a desert before you reach stone
+STONE_DEPTH_CEILING - this refers to the first layer in some open area underneath the stone base
+    - think when a cave is generated near the surface and you want a certain material to generate
+    along the roof of the cave
+STONE_DEPTH_CEILING_WITH_SURFACE_DEPTH
+    - this is similar to STONE_DEPTH_FLOOR_WITH_SURFACE_DEPTH, but with the ceiling instead of the floor
+
+Naturally, you can combine these conditions to get different layers of blocks before you actually reach stone.
+    - e.g. grass, then dirt, then red terracotta, then stone as a random example
+
+MaterialRules.stoneDepth(offset, addSurfaceDepth, secondaryDepthRange, verticalSurfaceType)
+    - this can be used to create custom surface depth conditions like the vanilla ones described above
+MaterialRules.biome(biomes)
+    - this can be used to create a biome condition
+MaterialRules.not(target)
+    - this method negates the given condition
+
+
+
+Rules:
+
+MaterialRules.condition(condition, rule)
+    - as you've probably guessed, this creates a conditional rule
+    - i.e. a rule which only applies if the given condition is met
+MaterialRules.sequence(rules)
+    - this creates a sequence of rules (usually conditional rules)
+    - only the first successful rule is applied
+    - for example, this can be used with the stone depth conditions above to
+    create a complex surface where you have grass on the top, then dirt below,
+    then terracotta underneath that, then finally stone. The top layer would meet
+    the conditions for all three layers, but it would be grass since that rule would
+    come first
+MaterialRules.block(state)
+    - this method refers to the block of the given block state
+    - this is how you actually specify a block to be used in generation
+
+
+
+There are other methods which I haven't fully figured out yet:
+    - water(offset, runDepthMultiplier)
+    - aboveY(anchor, runDepthMultiplier)
+    - noiseThreshold(noise, min, max)
+    - verticalGradient(id, trueAtAndBelow, falseAtAndAbove)
+    - aboveYWithStoneDepth(anchor, runDepthMultiplier)
+    - waterWithStoneDepth(offset, runDepthMultiplier)
+
+There are some other various methods, but I think those are most of the
+important ones. I'll update this note as I learn more about these rules
+and conditions.

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "mythril_slab",
+  "pattern": [
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "tutorialmod:mythril_block"
+    }
+  },
+  "result": {
+    "item": "tutorialmod:mythril_slab",
+    "count": 6
+  }
+}

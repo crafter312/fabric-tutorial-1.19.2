@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "#*#",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:stone"
+    },
+    "*": {
+      "tag": "c:mythril_ingots"
+    }
+  },
+  "result": {
+    "item": "tutorialmod:speedy_block"
+  }
+}

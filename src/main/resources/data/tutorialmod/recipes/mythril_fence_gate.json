@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#M#",
+    "#M#"
+  ],
+  "key": {
+    "#": {
+      "item": "tutorialmod:mythril_rod"
+    },
+    "M": {
+      "tag": "c:mythril_ingots"
+    }
+  },
+  "result": {
+    "item": "tutorialmod:mythril_fence_gate"
+  }
+}

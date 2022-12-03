@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "GGG",
+    "GDG",
+    "GGG"
+  ],
+  "key": {
+    "G": {
+      "item": "minecraft:glass"
+    },
+    "D": {
+      "item": "tutorialmod:mythril_dust"
+    }
+  },
+  "result": {
+    "item": "tutorialmod:winter_window",
+    "count": 8
+  }
+}

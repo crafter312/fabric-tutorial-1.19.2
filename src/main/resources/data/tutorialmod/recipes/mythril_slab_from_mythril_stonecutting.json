@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:stonecutting",
+  "group": "mythril_slab",
+  "ingredient": {
+    "item": "tutorialmod:mythril_block"
+  },
+  "result": "tutorialmod:mythril_slab",
+  "count": 2
+}

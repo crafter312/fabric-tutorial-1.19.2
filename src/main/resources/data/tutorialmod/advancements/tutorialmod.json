@@ -1,0 +1,28 @@
+{
+  "display": {
+    "icon": {
+      "item": "tutorialmod:mythril_ingot"
+    },
+    "title": "Mythril Ingot Acquired!",
+    "description": "Acquire a Mythril Ingot to get started with Tutorial Mod.",
+    "background": "tutorialmod:textures/block/mythril_block.png",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "tutorialmod:mythril_ingot"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

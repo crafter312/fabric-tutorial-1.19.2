@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "#tutorialmod:jacaranda_logs",
+    "tutorialmod:jacaranda_planks",
+    "tutorialmod:kaupen_door",
+    "tutorialmod:kaupen_trapdoor"
+  ]
+}

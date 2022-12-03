@@ -1,0 +1,20 @@
+{
+  "type": "tutorialmod:void_type",
+  "generator": {
+    "type": "minecraft:flat",
+    "settings": {
+      "layers": [],
+      "biome": "tutorialmod:hot_red",
+      "lakes": false,
+      "features": false,
+      "structures": {
+        "stronghold": {
+          "distance": 0,
+          "count": 0,
+          "spread": 0
+        },
+        "structures": {}
+      }
+    }
+  }
+}

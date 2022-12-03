@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "III",
+    "IBR",
+    "MMM"
+  ],
+  "key": {
+    "M": {
+      "item": "tutorialmod:mythril_block"
+    },
+    "R": {
+      "item": "tutorialmod:mythril_rod"
+    },
+    "B": {
+      "item": "minecraft:blast_furnace"
+    },
+    "I": {
+      "item": "tutorialmod:mythril_ingot"
+    }
+  },
+  "result": {
+    "item": "tutorialmod:mythril_blaster"
+  }
+}

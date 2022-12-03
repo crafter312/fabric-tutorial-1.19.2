@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "tag": "c:mythril_ingots"
+  },
+  "result": "tutorialmod:mythril_button",
+  "count": 1
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "mythril_wall",
+  "pattern": [
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "tutorialmod:mythril_block"
+    }
+  },
+  "result": {
+    "item": "tutorialmod:mythril_wall",
+    "count": 6
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "type": "tutorialmod:backrooms_midnight",
+  "generator": {
+    "type": "minecraft:flat",
+    "settings": {
+      "layers": [
+        {
+          "height": 69,
+          "block": "minecraft:stone"
+        },
+        {
+          "height": 1,
+          "block": "minecraft:brown_carpet"
+        },
+        {
+          "height": 3,
+          "block": "minecraft:air"
+        },
+        {
+          "height": 183,
+          "block": "minecraft:stone"
+        }
+      ],
+      "biome": "tutorialmod:level_0",
+      "lakes": false,
+      "features": true,
+      "structures": {
+        "stronghold": {
+          "distance": 0,
+          "count": 0,
+          "spread": 0
+        },
+        "structures": {}
+      }
+    }
+  }
+}

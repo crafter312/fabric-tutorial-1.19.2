@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "mythril_ingot",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "tutorialmod:mythril_nugget"
+    }
+  },
+  "result": {
+    "item": "tutorialmod:mythril_ingot"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:stonecutting",
+  "group": "mythril_wall",
+  "ingredient": {
+    "item": "tutorialmod:mythril_block"
+  },
+  "result": "tutorialmod:mythril_wall",
+  "count": 1
+}

@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "tutorialmod:kaupen_door",
+    "tutorialmod:kaupen_trapdoor",
+    "tutorialmod:speedy_block"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "bark",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "tutorialmod:jacaranda_log"
+    }
+  },
+  "result": {
+    "item": "tutorialmod:jacaranda_wood",
+    "count": 3
+  }
+}

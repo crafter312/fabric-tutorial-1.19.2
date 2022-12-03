@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " M ",
+    "MRM",
+    " M "
+  ],
+  "key": {
+    "R": {
+      "item": "minecraft:redstone"
+    },
+    "M": {
+      "tag": "c:mythril_ingots"
+    }
+  },
+  "result": {
+    "item": "tutorialmod:data_tablet"
+  }
+}

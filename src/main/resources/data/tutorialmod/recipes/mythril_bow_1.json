@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "mythril_bow",
+  "pattern": [
+    " RS",
+    "R S",
+    " RS"
+  ],
+  "key": {
+    "S": {
+      "item": "minecraft:string"
+    },
+    "R": {
+      "item": "tutorialmod:mythril_rod"
+    }
+  },
+  "result": {
+    "item": "tutorialmod:mythril_bow"
+  }
+}
