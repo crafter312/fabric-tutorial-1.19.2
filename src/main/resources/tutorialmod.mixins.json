@@ -9,7 +9,6 @@
     "BrewingRecipeRegistryMixin",
     "SignTypeAccessor",
     "BlockEntityTypeMixin",
-    "StructureFeatureAccessor"
   ],
   "client": [
     "ExampleMixin"
